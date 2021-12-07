@@ -1,0 +1,25 @@
+img {
+    float: left;
+}
+
+#uno, #dos {
+    border: 1px solid
+}
+
+#tres {
+    clear: left;
+}
+
+#ant {
+    float: left;
+}
+
+#sig {
+    float:right;
+}
+
+#pie {
+    width: 50%;
+    height: 50%
+
+}

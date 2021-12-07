@@ -1,0 +1,82 @@
+/* Utility Classes */
+.titulo-1 {
+  font-size: 50px;
+}
+
+.titulo-2 {
+  font-size: 40px;
+}
+
+#principal {
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#principal p {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#secc-descripcion {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.col-descripcion {
+  float: none;
+  width: 100%;
+  padding: 5px;
+}
+
+#opiniones {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#opiniones h4 {
+  padding-bottom: 20px;
+}
+
+#opiniones img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+#opiniones p {
+  width: 100%;
+}
+
+#productos {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.col-productos {
+  float: none;
+  width: 100%;
+  padding: 5px;
+}
+
+#sobre-market {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.lugar-imagen {
+  float: none;
+  width: 100%;
+  padding: 10px;
+}
+
+.texto-sobre-market {
+  float: none;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+#footer {
+  background: #F9F9F9;
+  text-align: center;
+  padding: 20px;
+}

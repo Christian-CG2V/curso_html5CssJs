@@ -1,0 +1,35 @@
+body {
+     margin: 0.5in;
+     background-image: url('../img/header.png')
+ }
+
+h1 { line-height: 5cm}
+
+/*
+p { word-spacing: 20mm}
+*/
+
+p {
+    margin: 1em;
+    /*color:rgb(71, 98, 176)*/
+    color: rgba(27%, 38%, 60%);
+    color: darkorange;
+
+}
+
+a { font-size: 12pt}
+
+span {
+    /*font-size: 1pc*/
+    font-size: 2em;
+    margin: 3em;
+
+}
+
+div {
+    margin: 20em 0.5em;
+}
+
+div img {
+    margin: .5em .5em
+}

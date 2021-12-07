@@ -1,0 +1,120 @@
+/* === IMPORTANTE ===================================================
+   No modificar estos estilos
+   ================================================================== */
+
+/*-- B�sico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*-- Layout ----------------------------------------------------------*/
+#contenedor {
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  margin: 0 auto;
+}
+
+#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
+  border: 2px solid #777;
+}
+
+#cabecera { clear: both; }
+#menu { clear: both; }
+#lateral { float: left; width: 20%; }
+#contenido { float: right; width: 78%; }
+#contenido #principal { float: left; width: 78%; }
+#contenido #secundario { float: right; width: 20%; }
+#pie { clear: both; }
+
+/*-- Cabecera --------------------------------------------------------*/
+#cabecera #logo { float: left; }
+#cabecera #buscador { float: right; }
+
+/*-- Menu ------------------------------------------------------------*/
+#menu ul#menu_principal li { display: inline; float: left; }
+
+/*-- Secci�n Principal -----------------------------------------------*/
+#contenido #principal .articulo img { width: 100px; float: left; }
+
+/*-- Pie de p�gina ---------------------------------------------------*/
+#pie .enlaces   { float: left; }
+#pie .copyright { float: right; }
+
+/* === IMPORTANTE ===================================================
+   A partir de aqui, se pueden añadir todos los estilos propios que
+   considere necesarios.
+   ================================================================== */
+
+#cabecera {
+    border-style: none;
+    margin: 1em 1em;
+}
+#cabecera h1 {
+    background-image: url('../img/logo.gif');
+}
+
+#menu {
+    background-image: url('../img/menu.gif');
+    border-style: none;
+    margin: 1em 0em 1em 0em;
+    padding: .2em .1em .2em .1em;
+}
+
+#contenido {
+    border-style: none;
+}
+
+#contenido #principal {
+    border-style: none;
+}
+
+#contenido #principal p {
+    padding: .2em;
+}
+
+#contenido #principal img {
+    margin: .5em;
+}
+
+#contenido  #secundario {
+    border-style: none;
+    padding-left: .2em;
+    padding-right: .2em;
+
+}
+#secundario h2 {
+    background: #DB905C;
+    padding: .2em;
+}
+
+
+#lateral {
+    border: none;
+    font-size: 10pt;
+}
+
+
+
+#noticias {
+    background: #f8f8f8;
+    padding: .2em;
+    border: solid 2px lightgray;
+}
+
+#publicidad {
+    margin-top: .5em;
+    border: dashed 2px #ffaacd;
+    background: #fff6cd;
+    padding: .2em;
+}
+
+
+#pie {
+    margin-top: .5em;
+    border-style: solid none solid none;
+    border-color: lightgray;
+
+    background: #f8f8f8
+}

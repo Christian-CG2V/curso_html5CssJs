@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Manejo de Eventos</title>
+
+		<script type="text/javascript">
+            
+            function muestraOculta() {
+            	var idEnlace = this.id;
+            	var arrayEnlace = idEnlace.split('_');
+            	var numParrafo = arrayEnlace[1]; 
+                var parrafo = document.getElementById('parrafo_' + numParrafo);
+                
+                //var enlace = document.getElementById('enlace_' + id);
+                switch(parrafo.style.display) {
+                case 'none':
+                    parrafo.style.display = 'block';
+                    this.innerHTML = 'Ocultar Párrafo';
+                    break;
+                case 'block':
+                case '':
+                    parrafo.style.display = 'none';
+                    this.innerHTML = 'Mostrar Párrafo';
+                    break;
+                }
+            }
+            
+            window.onload = function() {
+                var enlaces = document.getElementsByTagName('a');
+                for (i in enlaces) {
+                    enlaces[i].onclick = muestraOculta;
+                }
+            };
+            
+            
+
+		</script>
+	</head>
+
+	<body>
+
+		<p id="parrafo_1">
+			Cuidar el dinero de los consumidores no es suficiente para Ashifi Gogo. Él ha puesto los ojos en algo mucho más grande: salvar la vida de las personas. 
+			Este emprendedor es la mente maestra de la ingeniería que hay detrás del Mobile Product Authentication (Autentificación Móvil de Producto o MPA),
+			 una solución de la empresa Sproxil, ubicada en Massachusetts, EE.UU., que permite a los compradores determinar si los productos al menudeo 
+			 son legítimos, están falsificados o fueron robados, por medio de un teléfono celular.
+		</p>
+		<a id="enlace_1" href="#">Ocultar Párrafo</a>
+
+		<br/>
+
+		<p id="parrafo_2">
+			Simplemente, tienen que rascar la etiqueta de seguridad de Sproxil –adherida al artículo previamente en la fábrica– para revelar un código 
+			numérico que servirá una sola vez y enviar de manera gratuita dicho código en un mensaje de texto para obtener un número de seguridad para 
+			autentificar el origen del producto.
+		</p>
+		<a id="enlace_2" href="#"> Ocultar Párrafo</a>
+
+		<br/>
+
+		<p id="parrafo_3">
+			Aunque la tecnología del MPA trabaja con cualquier mercancía, Sproxil está concentrando sus esfuerzos en el mercado farmacéutico internacional. 
+			Y es que de acuerdo con la Organización Mundial de la Salud (OMS), hasta un 30% de los medicamentos que se venden en naciones emergentes de África, 
+			Asia y América Latina son pirata. “Queremos impactar en la vida de cientos de millones de consumidores en mercados en los que no se tienen otros medios
+			 para verificar los productos que compra”, dice Ashifi, oriundo de Ghana, quien fundó Sproxil en 2008.
+		</p>
+		<a id="enlace_3" href="#" >Ocultar Párrafo</a>
+		<br/>
+		
+		<p id="parrafo_4">
+		Supo de la epidemia de fármacos falsos en el oeste de África mientras estudiaba en Dartmouth College (EE.UU.) y su investigación de doctorado lo llevó 
+		a una primera versión del servicio MPA. Al principio, Ashifi enfocó su tecnología en la industria alimentaria, aplicada a los productos orgánicos,
+		 pero la respuesta no fue buena. “Los de las tiendas sintieron que era irrelevante y los consumidores estuvieron de acuerdo. Afirmaban que si la marca 
+		 decía que era orgánico, entonces era orgánico”.
+		 </p>
+		<a id="enlace_4" href="#" >Ocultar Párrafo</a>
+	</body>
+</html>

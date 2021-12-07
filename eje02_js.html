@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo 02 de JavaScript</title>
+    <script type="text/javascript">
+        function alerta() {
+            alert('hizo click!')
+        }
+
+        function hacerclick() {
+            // document.getElementsByTagName('p')[0].onclick= alerta;
+            document.getElementById('uno').onclick = alerta;
+        }
+        window.onload = hacerclick;
+    </script>
+</head>
+
+<body>
+
+    <p>click</p>
+    <button type="button" value="hola" name="button">Click</button>
+    <input type="button" name="click input" value="">
+
+    <p id="uno">otro parrafo</p>
+    <p id="dos">este es otro parrafo</p>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>DOM</title>
+
+		<script type="text/javascript">
+            window.onload = function() {
+            	var listaElementos = document.getElementsByTagName('li');
+            	                
+                var lista = document.getElementById('lista');
+                
+                for (var i = 0; i < listaElementos.length; i++) {
+                	var deleteLink = document.createElement('a');
+	                deleteLink.setAttribute('href', '#');
+                	
+    	            var deleteMsg = document.createTextNode('delete');
+        	        deleteLink.appendChild(deleteMsg);
+					lista.innerHTML = deleteLink;
+                    //lista.appendChild(deleteLink);
+                }
+            };
+            
+            function agregarElemento() {
+                var elemento = document.createElement("li");
+                var texto = document.createTextNode("Safari");
+
+                //var enlace = document.createElement(a);
+                
+
+                elemento.appendChild(texto);
+
+                var lista = document.getElementById('lista');
+                lista.appendChild(elemento);
+
+                etiqueta = '<li>Opera Móvil</li>';
+
+                lista.innerHTML = lista.innerHTML + etiqueta;
+
+            }
+		</script>
+	</head>
+
+	<body>
+
+		<ul id="lista">
+			<li>
+				Chrome
+			</li>
+			<li>
+				Android
+			</li>
+			<li>
+				Firefox
+			</li>
+			<li>
+				Internet Explorer
+			</li>
+		</ul>
+
+		<input type="button" value="Añadir " onclick="agregarElemento();">
+
+	</body>
+</html>

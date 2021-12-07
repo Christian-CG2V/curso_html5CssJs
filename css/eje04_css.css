@@ -1,0 +1,57 @@
+h1 {
+    color:gold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    font-size:large;
+}
+
+h2 {
+
+}
+p span { color: orange;}
+h1 span {color: blue}
+p a span em {text-decoration: :dashed}
+
+p * a {
+    color: brown;
+}
+
+p {
+    color: gray ;
+    font-family: Vernana;
+    font-size: medium;
+}
+
+.main {
+    color: chocolate;
+    font-size: x-large;
+
+
+}
+
+span.main {
+    color: green;
+}
+
+span .main {
+    color: blueviolet;
+
+}
+
+.resaltar {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.principal {
+    font-size: 15px;
+}
+
+.error {
+    color: red;
+}
+
+
+#navi {
+    color:aquamarine;
+}
